@@ -1,5 +1,5 @@
 import Logo from "../../branding/Logo"
-import IconButton from "../../ui/botoes/Iconbutton"
+import IconButton from "../../ui/buttons/IconButton"
 import Navigation from "./Navigation"
 
 const Navbar = () => {
