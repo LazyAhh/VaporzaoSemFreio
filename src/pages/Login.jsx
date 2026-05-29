@@ -34,7 +34,7 @@ const Login = () => {
 
       login(data)
 
-      navigate("/Home")
+      navigate("/")
 
     } catch (err) {
 

@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom"
 import Home from "../pages/Home"
 import Login from "../pages/Login"
 import PrimeiroAcesso from "../pages/PrimeiroAcesso"
+import NotFound from "../pages/NotFound"
 // import Library from "../pages/Library"
 
 import ProtectedRoute from "../components/auth/ProtectedRoute"
@@ -11,14 +12,15 @@ import ProtectedRoute from "../components/auth/ProtectedRoute"
 const AppRoutes = () => {
   return (
     <Routes>
+
       <Route
         path="/"
-        element={<Login />}
+        element={<Home />}
       />
 
       <Route
-        path="/Home"
-        element={<Home />}
+        path="/login"
+        element={<Login />}
       />
 
       <Route
@@ -34,6 +36,9 @@ const AppRoutes = () => {
           </ProtectedRoute>
         }
       /> */}
+      <Route
+        path="*"
+        element={<NotFound />} />
 
     </Routes>
   )

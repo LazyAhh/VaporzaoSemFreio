@@ -17,7 +17,7 @@ const AuthActions = () => {
 
         logout()
 
-        navigate("/")
+        navigate("/login")
     }
 
     if (isAuthenticated) {
@@ -33,7 +33,7 @@ const AuthActions = () => {
 
     return (
         <button
-            onClick={() => navigate("/")}
+            onClick={() => navigate("/login")}
             className="rounded-lg bg-violet-600 px-4 py-2 text-sm font-bold text-white transition hover:bg-violet-500"
         >
             Entrar
