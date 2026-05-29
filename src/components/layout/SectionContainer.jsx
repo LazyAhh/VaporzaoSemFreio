@@ -1,4 +1,4 @@
-// components/layout/SectionContainer/SectionContainer.jsx
+
 
 const SectionContainer = ({
     children,
